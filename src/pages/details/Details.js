@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, View, Image, StyleSheet, Dimensions, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 import useFetch from '../../hooks/useFetch';
 import Loading from '../../components/loading/Loading';
 import Error from '../../components/error/Error';
-
+import styles from './DetailsStyle'
 
 const Details = ({ route }) => {
 
@@ -17,7 +17,6 @@ const Details = ({ route }) => {
   if (error) {
     return <Error source={require('../../assets/error.json')} autoPlay loop />;
   }
-
   return (
     <ScrollView style={{ backgroundColor: 'white',flex:1}}>
       <View style={styles.container} >
@@ -33,38 +32,5 @@ const Details = ({ route }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 10,
-    backgroundColor: 'white',
-    flex:1,
-  },
-  image: {
-    width: Dimensions.get('window').width-20,
-    height: Dimensions.get('window').height / 2,
-    padding: 10,
-    resizeMode: 'contain',
-    backgroundColor: 'white'
-  },
-  title: {
-    fontWeight: 'bold',
-    fontSize: 32,
-    marginTop:20
-  },
-  description: {
-    fontStyle: 'italic',
-    fontSize: 22,
-    marginTop:10
-  },
-  price: {
-    fontWeight: 'bold',
-    fontSize: 24,
-    marginTop: 10,
-    textAlign: 'right',
-    marginEnd: 10,
-    color:'red'
-  },
-  
-})
 
 export default Details;
