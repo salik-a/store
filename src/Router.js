@@ -30,6 +30,7 @@ function Router() {
             headerStyle: { backgroundColor: "#64b5f6" },
             headerTitleStyle: { color: "white", alignSelf: 'center', textAlign: 'center' },
             headerTitleAlign: 'center',
+            headerTintColor: "white"
 
           }}
         />
