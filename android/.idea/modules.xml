@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shop.iml" filepath="$PROJECT_DIR$/.idea/modules/shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/shop.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/shop.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2020416944/shop.lottie-react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-2020416944/shop.lottie-react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/589504389/shop.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/589504389/shop.react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1373348654/shop.react-native-config.iml" filepath="$PROJECT_DIR$/.idea/modules/-1373348654/shop.react-native-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1055167265/shop.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1055167265/shop.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1555003465/shop.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-1555003465/shop.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-978038368/shop.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-978038368/shop.react-native-vector-icons.iml" />
+    </modules>
+  </component>
+</project>

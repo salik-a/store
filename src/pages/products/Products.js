@@ -7,14 +7,14 @@ import Error from '../../components/error/Error';
 
 const Products = ({navigation}) => {
   
-  const {loading, data, error} = useFetch("https://fakestoreapi.com/products")
+  const { loading, data, error } = useFetch("https://fakestoreapi.com/products")
 
   const handleCardSelect = (id) => {
     navigation.navigate('DetailsPage',{id})
   }
 
-  const renderProduct = ({ item }) => <ProductCard product={item} onSelect={()=>handleCardSelect(item.id)} />;
-  
+  const renderProduct = ({ item }) => <ProductCard product={item} onSelect={() => handleCardSelect(item.id)} />;
+
   if (loading) {
     return <Loading source={require('../../assets/loading.json')} autoPlay loop />;
   }
