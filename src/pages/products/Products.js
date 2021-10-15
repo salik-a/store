@@ -1,5 +1,5 @@
 import React, { useState, useEffect }from 'react';
-import { ActivityIndicator, Button, FlatList, SafeAreaView, Text } from 'react-native';
+import { FlatList, SafeAreaView } from 'react-native';
 import ProductCard from '../../components/productCard/ProductCard';
 import useFetch from '../../hooks/useFetch';
 import Loading from '../../components/loading/Loading';

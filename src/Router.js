@@ -9,7 +9,6 @@ import Products from './pages/products/Products'
 import Details from './pages/details/Details'
 import Login from './pages/login/Login';
 import { useSelector, useDispatch } from "react-redux"
-import Loading from "./components/loading/Loading"
 import Icon from "react-native-vector-icons/MaterialCommunityIcons"
 
 

@@ -13,9 +13,10 @@ export default StyleSheet.create({
     image: {
         width: 150,
         height: 150,
-        margin: 10,
+        margin: 6,
         resizeMode: 'contain',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+
     },
     body_container: {
         flex: 1,

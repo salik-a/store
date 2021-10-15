@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, SafeAreaView, Image, Alert } from "react-native";
 import styles from './LoginStyle'
 import Input from '../../components/input/Input'
 import Button from '../../components/button/Button'
 import { Formik } from 'formik';
 import usePost from "../../hooks/usePost";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useDispatch } from "react-redux"
 
-const Login = ({ navigation }) => {
+const Login = () => {
     const { data, loading, error, post } = usePost();
     const dispatch = useDispatch()
-
-    function handleLogin(values) {
-        post('https://fakestoreapi.com/auth/login', values)
-        console.log(values)
+    const [user, setUser] = useState()
+    const handleLogin = async (values) => {
+        await post('https://fakestoreapi.com/auth/login', values)
+        setUser(values)
     }
+    console.log(user)
     if (error) {
         Alert.alert("Dükkan", "Bir hata oluştu")
     }
 
     if (data) {
+
         if (data.status === "Error") {
             Alert.alert("Dükkan", "Kullanıcı bulunamadı")
         } else {
@@ -53,19 +54,4 @@ const Login = ({ navigation }) => {
 
 export default Login;
 
-const user = {
-    "address": {
-        "geolocation": { "lat": "-37.3159", "long": "81.1496" },
-        "city": "kilcoole",
-        "street": "new road",
-        "number": 7682,
-        "zipcode": "12926-3874"
-    },
-    "id": 1,
-    "email": "john@gmail.com",
-    "username": "johnd",
-    "password": "m38rmF$",
-    "name": { "firstname": "john", "lastname": "doe" },
-    "phone": "1-570-236-7033",
-    "__v": 0
-};
+//const user = { "password": "m38rmF$", "username": "johnd" };

@@ -1,17 +1,17 @@
 
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableWithoutFeedback, Animated } from 'react-native';
 import styles from './ProductCardStyle'
-const ProductCard = ({ product, onSelect }) => {
+const ProductCard = ({ product, onSelect ,transform }) => {
     return (
         <TouchableWithoutFeedback onPress={onSelect}>
-            <View style={styles.container}>
+            <Animated.View style={[...transform],styles.container}>
                 <Image style={styles.image} source={{ uri: product.image }} />
                 <View style={styles.body_container}>
                     <Text style={styles.title}>{product.title}</Text>
                     <Text style={styles.price}>{product.price} $</Text>
                 </View>
-            </View>
+            </Animated.View>
         </TouchableWithoutFeedback>
 
     );
